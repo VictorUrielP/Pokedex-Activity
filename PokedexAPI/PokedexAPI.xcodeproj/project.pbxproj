@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D1F4DB90291AF11F00F9F077 /* PokedexAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F4DB8F291AF11F00F9F077 /* PokedexAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1F4DB98291AF22000F9F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F4DB96291AF22000F9F077 /* Assets.xcassets */; };
+		D1F4DB99291AF22000F9F077 /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = D1F4DB97291AF22000F9F077 /* pokemons.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1F4DB8C291AF11F00F9F077 /* PokedexAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PokedexAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F4DB8F291AF11F00F9F077 /* PokedexAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokedexAPI.h; sourceTree = "<group>"; };
+		D1F4DB96291AF22000F9F077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F4DB97291AF22000F9F077 /* pokemons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 		D1F4DB8E291AF11F00F9F077 /* PokedexAPI */ = {
 			isa = PBXGroup;
 			children = (
+				D1F4DB96291AF22000F9F077 /* Assets.xcassets */,
+				D1F4DB97291AF22000F9F077 /* pokemons.json */,
 				D1F4DB8F291AF11F00F9F077 /* PokedexAPI.h */,
 			);
 			path = PokedexAPI;
@@ -119,6 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1F4DB98291AF22000F9F077 /* Assets.xcassets in Resources */,
+				D1F4DB99291AF22000F9F077 /* pokemons.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
