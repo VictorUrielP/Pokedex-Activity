@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PokedexApp/PokedexApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PokedexAPI/PokedexAPI.xcodeproj">
    </FileRef>
 </Workspace>
