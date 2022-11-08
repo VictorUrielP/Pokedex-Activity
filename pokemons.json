@@ -1,0 +1,1352 @@
+[
+  {
+    "weight": 400,
+    "id": 36,
+    "types": ["fairy"],
+    "image": "p.clefable.png",
+    "base_experience": 242,
+    "name": "clefable",
+    "abilities": ["Cute-Charm", "Magic-Guard", "Unaware"]
+  },
+  {
+    "weight": 480,
+    "id": 65,
+    "types": ["psychic"],
+    "image": "p.alakazam.png",
+    "base_experience": 250,
+    "name": "alakazam",
+    "abilities": ["Synchronize", "Inner-Focus", "Magic-Guard"]
+  },
+  {
+    "weight": 40,
+    "id": 90,
+    "types": ["water"],
+    "image": "p.shellder.png",
+    "base_experience": 61,
+    "name": "shellder",
+    "abilities": ["Shell-Armor", "Skill-Link", "Overcoat"]
+  },
+  {
+    "weight": 1,
+    "id": 93,
+    "types": ["ghost", "poison"],
+    "image": "p.haunter.png",
+    "base_experience": 142,
+    "name": "haunter",
+    "abilities": ["Levitate"]
+  },
+  {
+    "weight": 65,
+    "id": 98,
+    "types": ["water"],
+    "image": "p.krabby.png",
+    "base_experience": 65,
+    "name": "krabby",
+    "abilities": ["Hyper-Cutter", "Shell-Armor", "Sheer-Force"]
+  },
+  {
+    "weight": 104,
+    "id": 100,
+    "types": ["electric"],
+    "image": "p.voltorb.png",
+    "base_experience": 66,
+    "name": "voltorb",
+    "abilities": ["Soundproof", "Static", "Aftermath"]
+  },
+  {
+    "weight": 10,
+    "id": 109,
+    "types": ["poison"],
+    "image": "p.koffing.png",
+    "base_experience": 68,
+    "name": "koffing",
+    "abilities": ["Levitate", "Neutralizing-Gas", "Stench"]
+  },
+  {
+    "weight": 1200,
+    "id": 112,
+    "types": ["ground", "rock"],
+    "image": "p.rhydon.png",
+    "base_experience": 170,
+    "name": "rhydon",
+    "abilities": ["Lightning-Rod", "Rock-Head", "Reckless"]
+  },
+  {
+    "weight": 346,
+    "id": 113,
+    "types": ["normal"],
+    "image": "p.chansey.png",
+    "base_experience": 395,
+    "name": "chansey",
+    "abilities": ["Natural-Cure", "Serene-Grace", "Healer"]
+  },
+  {
+    "weight": 350,
+    "id": 114,
+    "types": ["grass"],
+    "image": "p.tangela.png",
+    "base_experience": 87,
+    "name": "tangela",
+    "abilities": ["Chlorophyll", "Leaf-Guard", "Regenerator"]
+  },
+  {
+    "weight": 65,
+    "id": 133,
+    "types": ["normal"],
+    "image": "p.eevee.png",
+    "base_experience": 65,
+    "name": "eevee",
+    "abilities": ["Run-Away", "Adaptability", "Anticipation"]
+  },
+  {
+    "weight": 2100,
+    "id": 149,
+    "types": ["dragon", "flying"],
+    "image": "p.dragonite.png",
+    "base_experience": 300,
+    "name": "dragonite",
+    "abilities": ["Inner-Focus", "Multiscale"]
+  },
+  {
+    "weight": 855,
+    "id": 9,
+    "types": ["water"],
+    "image": "p.blastoise.png",
+    "base_experience": 265,
+    "name": "blastoise",
+    "abilities": ["Torrent", "Rain-Dish"]
+  },
+  {
+    "weight": 32,
+    "id": 13,
+    "types": ["bug", "poison"],
+    "image": "p.weedle.png",
+    "base_experience": 39,
+    "name": "weedle",
+    "abilities": ["Shield-Dust", "Run-Away"]
+  },
+  {
+    "weight": 225,
+    "id": 8,
+    "types": ["water"],
+    "image": "p.wartortle.png",
+    "base_experience": 142,
+    "name": "wartortle",
+    "abilities": ["Torrent", "Rain-Dish"]
+  },
+  {
+    "weight": 85,
+    "id": 4,
+    "types": ["fire"],
+    "image": "p.charmander.png",
+    "base_experience": 62,
+    "name": "charmander",
+    "abilities": ["Blaze", "Solar-Power"]
+  },
+  {
+    "weight": 99,
+    "id": 11,
+    "types": ["bug"],
+    "image": "p.metapod.png",
+    "base_experience": 72,
+    "name": "metapod",
+    "abilities": ["Shed-Skin"]
+  },
+  {
+    "weight": 29,
+    "id": 10,
+    "types": ["bug"],
+    "image": "p.caterpie.png",
+    "base_experience": 39,
+    "name": "caterpie",
+    "abilities": ["Shield-Dust", "Run-Away"]
+  },
+  {
+    "weight": 190,
+    "id": 5,
+    "types": ["fire"],
+    "image": "p.charmeleon.png",
+    "base_experience": 142,
+    "name": "charmeleon",
+    "abilities": ["Blaze", "Solar-Power"]
+  },
+  {
+    "weight": 295,
+    "id": 15,
+    "types": ["bug", "poison"],
+    "image": "p.beedrill.png",
+    "base_experience": 178,
+    "name": "beedrill",
+    "abilities": ["Swarm", "Sniper"]
+  },
+  {
+    "weight": 18,
+    "id": 16,
+    "types": ["normal", "flying"],
+    "image": "p.pidgey.png",
+    "base_experience": 50,
+    "name": "pidgey",
+    "abilities": ["Keen-Eye", "Tangled-Feet", "Big-Pecks"]
+  },
+  {
+    "weight": 100,
+    "id": 14,
+    "types": ["bug", "poison"],
+    "image": "p.kakuna.png",
+    "base_experience": 72,
+    "name": "kakuna",
+    "abilities": ["Shed-Skin"]
+  },
+  {
+    "weight": 395,
+    "id": 18,
+    "types": ["normal", "flying"],
+    "image": "p.pidgeot.png",
+    "base_experience": 216,
+    "name": "pidgeot",
+    "abilities": ["Keen-Eye", "Tangled-Feet", "Big-Pecks"]
+  },
+  {
+    "weight": 35,
+    "id": 19,
+    "types": ["normal"],
+    "image": "p.rattata.png",
+    "base_experience": 51,
+    "name": "rattata",
+    "abilities": ["Run-Away", "Guts", "Hustle"]
+  },
+  {
+    "weight": 20,
+    "id": 21,
+    "types": ["normal", "flying"],
+    "image": "p.spearow.png",
+    "base_experience": 52,
+    "name": "spearow",
+    "abilities": ["Keen-Eye", "Sniper"]
+  },
+  {
+    "weight": 380,
+    "id": 22,
+    "types": ["normal", "flying"],
+    "image": "p.fearow.png",
+    "base_experience": 155,
+    "name": "fearow",
+    "abilities": ["Keen-Eye", "Sniper"]
+  },
+  {
+    "weight": 69,
+    "id": 23,
+    "types": ["poison"],
+    "image": "p.ekans.png",
+    "base_experience": 58,
+    "name": "ekans",
+    "abilities": ["Intimidate", "Shed-Skin", "Unnerve"]
+  },
+  {
+    "weight": 70,
+    "id": 29,
+    "types": ["poison"],
+    "image": "p.nidoran-f.png",
+    "base_experience": 55,
+    "name": "nidoran-f",
+    "abilities": ["Poison-Point", "Rivalry", "Hustle"]
+  },
+  {
+    "weight": 200,
+    "id": 30,
+    "types": ["poison"],
+    "image": "p.nidorina.png",
+    "base_experience": 128,
+    "name": "nidorina",
+    "abilities": ["Poison-Point", "Rivalry", "Hustle"]
+  },
+  {
+    "weight": 600,
+    "id": 31,
+    "types": ["poison", "ground"],
+    "image": "p.nidoqueen.png",
+    "base_experience": 253,
+    "name": "nidoqueen",
+    "abilities": ["Poison-Point", "Rivalry", "Sheer-Force"]
+  },
+  {
+    "weight": 60,
+    "id": 25,
+    "types": ["electric"],
+    "image": "p.pikachu.png",
+    "base_experience": 112,
+    "name": "pikachu",
+    "abilities": ["Static", "Lightning-Rod"]
+  },
+  {
+    "weight": 295,
+    "id": 28,
+    "types": ["ground"],
+    "image": "p.sandslash.png",
+    "base_experience": 158,
+    "name": "sandslash",
+    "abilities": ["Sand-Veil", "Sand-Rush"]
+  },
+  {
+    "weight": 90,
+    "id": 32,
+    "types": ["poison"],
+    "image": "p.nidoran-m.png",
+    "base_experience": 55,
+    "name": "nidoran-m",
+    "abilities": ["Poison-Point", "Rivalry", "Hustle"]
+  },
+  {
+    "weight": 75,
+    "id": 41,
+    "types": ["poison", "flying"],
+    "image": "p.zubat.png",
+    "base_experience": 49,
+    "name": "zubat",
+    "abilities": ["Inner-Focus", "Infiltrator"]
+  },
+  {
+    "weight": 99,
+    "id": 37,
+    "types": ["fire"],
+    "image": "p.vulpix.png",
+    "base_experience": 60,
+    "name": "vulpix",
+    "abilities": ["Flash-Fire", "Drought"]
+  },
+  {
+    "weight": 199,
+    "id": 38,
+    "types": ["fire"],
+    "image": "p.ninetales.png",
+    "base_experience": 177,
+    "name": "ninetales",
+    "abilities": ["Flash-Fire", "Drought"]
+  },
+  {
+    "weight": 55,
+    "id": 39,
+    "types": ["normal", "fairy"],
+    "image": "p.jigglypuff.png",
+    "base_experience": 95,
+    "name": "jigglypuff",
+    "abilities": ["Cute-Charm", "Competitive", "Friend-Guard"]
+  },
+  {
+    "weight": 54,
+    "id": 43,
+    "types": ["grass", "poison"],
+    "image": "p.oddish.png",
+    "base_experience": 64,
+    "name": "oddish",
+    "abilities": ["Chlorophyll", "Run-Away"]
+  },
+  {
+    "weight": 86,
+    "id": 44,
+    "types": ["grass", "poison"],
+    "image": "p.gloom.png",
+    "base_experience": 138,
+    "name": "gloom",
+    "abilities": ["Chlorophyll", "Stench"]
+  },
+  {
+    "weight": 300,
+    "id": 48,
+    "types": ["bug", "poison"],
+    "image": "p.venonat.png",
+    "base_experience": 61,
+    "name": "venonat",
+    "abilities": ["Compound-Eyes", "Tinted-Lens", "Run-Away"]
+  },
+  {
+    "weight": 125,
+    "id": 49,
+    "types": ["bug", "poison"],
+    "image": "p.venomoth.png",
+    "base_experience": 158,
+    "name": "venomoth",
+    "abilities": ["Shield-Dust", "Tinted-Lens", "Wonder-Skin"]
+  },
+  {
+    "weight": 295,
+    "id": 47,
+    "types": ["bug", "grass"],
+    "image": "p.parasect.png",
+    "base_experience": 142,
+    "name": "parasect",
+    "abilities": ["Effect-Spore", "Dry-Skin", "Damp"]
+  },
+  {
+    "weight": 550,
+    "id": 42,
+    "types": ["poison", "flying"],
+    "image": "p.golbat.png",
+    "base_experience": 159,
+    "name": "golbat",
+    "abilities": ["Inner-Focus", "Infiltrator"]
+  },
+  {
+    "weight": 186,
+    "id": 45,
+    "types": ["grass", "poison"],
+    "image": "p.vileplume.png",
+    "base_experience": 245,
+    "name": "vileplume",
+    "abilities": ["Chlorophyll", "Effect-Spore"]
+  },
+  {
+    "weight": 8,
+    "id": 50,
+    "types": ["ground"],
+    "image": "p.diglett.png",
+    "base_experience": 53,
+    "name": "diglett",
+    "abilities": ["Sand-Veil", "Arena-Trap", "Sand-Force"]
+  },
+  {
+    "weight": 42,
+    "id": 52,
+    "types": ["normal"],
+    "image": "p.meowth.png",
+    "base_experience": 58,
+    "name": "meowth",
+    "abilities": ["Pickup", "Technician", "Unnerve"]
+  },
+  {
+    "weight": 320,
+    "id": 53,
+    "types": ["normal"],
+    "image": "p.persian.png",
+    "base_experience": 154,
+    "name": "persian",
+    "abilities": ["Limber", "Technician", "Unnerve"]
+  },
+  {
+    "weight": 766,
+    "id": 55,
+    "types": ["water"],
+    "image": "p.golduck.png",
+    "base_experience": 175,
+    "name": "golduck",
+    "abilities": ["Damp", "Cloud-Nine", "Swift-Swim"]
+  },
+  {
+    "weight": 1550,
+    "id": 59,
+    "types": ["fire"],
+    "image": "p.arcanine.png",
+    "base_experience": 194,
+    "name": "arcanine",
+    "abilities": ["Intimidate", "Flash-Fire", "Justified"]
+  },
+  {
+    "weight": 280,
+    "id": 56,
+    "types": ["fighting"],
+    "image": "p.mankey.png",
+    "base_experience": 61,
+    "name": "mankey",
+    "abilities": ["Vital-Spirit", "Anger-Point", "Defiant"]
+  },
+  {
+    "weight": 320,
+    "id": 57,
+    "types": ["fighting"],
+    "image": "p.primeape.png",
+    "base_experience": 159,
+    "name": "primeape",
+    "abilities": ["Vital-Spirit", "Anger-Point", "Defiant"]
+  },
+  {
+    "weight": 195,
+    "id": 66,
+    "types": ["fighting"],
+    "image": "p.machop.png",
+    "base_experience": 61,
+    "name": "machop",
+    "abilities": ["Guts", "No-Guard", "Steadfast"]
+  },
+  {
+    "weight": 540,
+    "id": 62,
+    "types": ["water", "fighting"],
+    "image": "p.poliwrath.png",
+    "base_experience": 255,
+    "name": "poliwrath",
+    "abilities": ["Water-Absorb", "Damp", "Swift-Swim"]
+  },
+  {
+    "weight": 705,
+    "id": 67,
+    "types": ["fighting"],
+    "image": "p.machoke.png",
+    "base_experience": 142,
+    "name": "machoke",
+    "abilities": ["Guts", "No-Guard", "Steadfast"]
+  },
+  {
+    "weight": 200,
+    "id": 61,
+    "types": ["water"],
+    "image": "p.poliwhirl.png",
+    "base_experience": 135,
+    "name": "poliwhirl",
+    "abilities": ["Water-Absorb", "Damp", "Swift-Swim"]
+  },
+  {
+    "weight": 455,
+    "id": 72,
+    "types": ["water", "poison"],
+    "image": "p.tentacool.png",
+    "base_experience": 67,
+    "name": "tentacool",
+    "abilities": ["Clear-Body", "Liquid-Ooze", "Rain-Dish"]
+  },
+  {
+    "weight": 300,
+    "id": 77,
+    "types": ["fire"],
+    "image": "p.ponyta.png",
+    "base_experience": 82,
+    "name": "ponyta",
+    "abilities": ["Run-Away", "Flash-Fire", "Flame-Body"]
+  },
+  {
+    "weight": 64,
+    "id": 70,
+    "types": ["grass", "poison"],
+    "image": "p.weepinbell.png",
+    "base_experience": 137,
+    "name": "weepinbell",
+    "abilities": ["Chlorophyll", "Gluttony"]
+  },
+  {
+    "weight": 550,
+    "id": 73,
+    "types": ["water", "poison"],
+    "image": "p.tentacruel.png",
+    "base_experience": 180,
+    "name": "tentacruel",
+    "abilities": ["Clear-Body", "Liquid-Ooze", "Rain-Dish"]
+  },
+  {
+    "weight": 950,
+    "id": 78,
+    "types": ["fire"],
+    "image": "p.rapidash.png",
+    "base_experience": 175,
+    "name": "rapidash",
+    "abilities": ["Run-Away", "Flash-Fire", "Flame-Body"]
+  },
+  {
+    "weight": 40,
+    "id": 69,
+    "types": ["grass", "poison"],
+    "image": "p.bellsprout.png",
+    "base_experience": 60,
+    "name": "bellsprout",
+    "abilities": ["Chlorophyll", "Gluttony"]
+  },
+  {
+    "weight": 1300,
+    "id": 68,
+    "types": ["fighting"],
+    "image": "p.machamp.png",
+    "base_experience": 253,
+    "name": "machamp",
+    "abilities": ["Guts", "No-Guard", "Steadfast"]
+  },
+  {
+    "weight": 60,
+    "id": 81,
+    "types": ["electric", "steel"],
+    "image": "p.magnemite.png",
+    "base_experience": 65,
+    "name": "magnemite",
+    "abilities": ["Magnet-Pull", "Sturdy", "Analytic"]
+  },
+  {
+    "weight": 150,
+    "id": 83,
+    "types": ["normal", "flying"],
+    "image": "p.farfetchd.png",
+    "base_experience": 132,
+    "name": "farfetchd",
+    "abilities": ["Keen-Eye", "Inner-Focus", "Defiant"]
+  },
+  {
+    "weight": 600,
+    "id": 82,
+    "types": ["electric", "steel"],
+    "image": "p.magneton.png",
+    "base_experience": 163,
+    "name": "magneton",
+    "abilities": ["Magnet-Pull", "Sturdy", "Analytic"]
+  },
+  {
+    "weight": 392,
+    "id": 84,
+    "types": ["normal", "flying"],
+    "image": "p.doduo.png",
+    "base_experience": 62,
+    "name": "doduo",
+    "abilities": ["Run-Away", "Early-Bird", "Tangled-Feet"]
+  },
+  {
+    "weight": 360,
+    "id": 79,
+    "types": ["water", "psychic"],
+    "image": "p.slowpoke.png",
+    "base_experience": 63,
+    "name": "slowpoke",
+    "abilities": ["Oblivious", "Own-Tempo", "Regenerator"]
+  },
+  {
+    "weight": 785,
+    "id": 80,
+    "types": ["water", "psychic"],
+    "image": "p.slowbro.png",
+    "base_experience": 172,
+    "name": "slowbro",
+    "abilities": ["Oblivious", "Own-Tempo", "Regenerator"]
+  },
+  {
+    "weight": 69,
+    "id": 1,
+    "types": ["grass", "poison"],
+    "image": "p.bulbasaur.png",
+    "base_experience": 64,
+    "name": "bulbasaur",
+    "abilities": ["Overgrow", "Chlorophyll"]
+  },
+  {
+    "weight": 300,
+    "id": 88,
+    "types": ["poison"],
+    "image": "p.grimer.png",
+    "base_experience": 65,
+    "name": "grimer",
+    "abilities": ["Stench", "Sticky-Hold", "Poison-Touch"]
+  },
+  {
+    "weight": 900,
+    "id": 86,
+    "types": ["water"],
+    "image": "p.seel.png",
+    "base_experience": 65,
+    "name": "seel",
+    "abilities": ["Thick-Fat", "Hydration", "Ice-Body"]
+  },
+  {
+    "weight": 130,
+    "id": 2,
+    "types": ["grass", "poison"],
+    "image": "p.ivysaur.png",
+    "base_experience": 142,
+    "name": "ivysaur",
+    "abilities": ["Overgrow", "Chlorophyll"]
+  },
+  {
+    "weight": 852,
+    "id": 85,
+    "types": ["normal", "flying"],
+    "image": "p.dodrio.png",
+    "base_experience": 165,
+    "name": "dodrio",
+    "abilities": ["Run-Away", "Early-Bird", "Tangled-Feet"]
+  },
+  {
+    "weight": 195,
+    "id": 33,
+    "types": ["poison"],
+    "image": "p.nidorino.png",
+    "base_experience": 128,
+    "name": "nidorino",
+    "abilities": ["Poison-Point", "Rivalry", "Hustle"]
+  },
+  {
+    "weight": 1,
+    "id": 92,
+    "types": ["ghost", "poison"],
+    "image": "p.gastly.png",
+    "base_experience": 62,
+    "name": "gastly",
+    "abilities": ["Levitate"]
+  },
+  {
+    "weight": 405,
+    "id": 94,
+    "types": ["ghost", "poison"],
+    "image": "p.gengar.png",
+    "base_experience": 250,
+    "name": "gengar",
+    "abilities": ["Cursed-Body"]
+  },
+  {
+    "weight": 756,
+    "id": 97,
+    "types": ["psychic"],
+    "image": "p.hypno.png",
+    "base_experience": 169,
+    "name": "hypno",
+    "abilities": ["Insomnia", "Forewarn", "Inner-Focus"]
+  },
+  {
+    "weight": 666,
+    "id": 101,
+    "types": ["electric"],
+    "image": "p.electrode.png",
+    "base_experience": 172,
+    "name": "electrode",
+    "abilities": ["Soundproof", "Static", "Aftermath"]
+  },
+  {
+    "weight": 600,
+    "id": 99,
+    "types": ["water"],
+    "image": "p.kingler.png",
+    "base_experience": 166,
+    "name": "kingler",
+    "abilities": ["Hyper-Cutter", "Shell-Armor", "Sheer-Force"]
+  },
+  {
+    "weight": 25,
+    "id": 102,
+    "types": ["grass", "psychic"],
+    "image": "p.exeggcute.png",
+    "base_experience": 65,
+    "name": "exeggcute",
+    "abilities": ["Chlorophyll", "Harvest"]
+  },
+  {
+    "weight": 1200,
+    "id": 103,
+    "types": ["grass", "psychic"],
+    "image": "p.exeggutor.png",
+    "base_experience": 186,
+    "name": "exeggutor",
+    "abilities": ["Chlorophyll", "Harvest"]
+  },
+  {
+    "weight": 450,
+    "id": 105,
+    "types": ["ground"],
+    "image": "p.marowak.png",
+    "base_experience": 149,
+    "name": "marowak",
+    "abilities": ["Rock-Head", "Lightning-Rod", "Battle-Armor"]
+  },
+  {
+    "weight": 498,
+    "id": 106,
+    "types": ["fighting"],
+    "image": "p.hitmonlee.png",
+    "base_experience": 159,
+    "name": "hitmonlee",
+    "abilities": ["Limber", "Reckless", "Unburden"]
+  },
+  {
+    "weight": 502,
+    "id": 107,
+    "types": ["fighting"],
+    "image": "p.hitmonchan.png",
+    "base_experience": 159,
+    "name": "hitmonchan",
+    "abilities": ["Keen-Eye", "Iron-Fist", "Inner-Focus"]
+  },
+  {
+    "weight": 655,
+    "id": 108,
+    "types": ["normal"],
+    "image": "p.lickitung.png",
+    "base_experience": 77,
+    "name": "lickitung",
+    "abilities": ["Own-Tempo", "Oblivious", "Cloud-Nine"]
+  },
+  {
+    "weight": 95,
+    "id": 110,
+    "types": ["poison"],
+    "image": "p.weezing.png",
+    "base_experience": 172,
+    "name": "weezing",
+    "abilities": ["Levitate", "Neutralizing-Gas", "Stench"]
+  },
+  {
+    "weight": 80,
+    "id": 116,
+    "types": ["water"],
+    "image": "p.horsea.png",
+    "base_experience": 59,
+    "name": "horsea",
+    "abilities": ["Swift-Swim", "Sniper", "Damp"]
+  },
+  {
+    "weight": 250,
+    "id": 117,
+    "types": ["water"],
+    "image": "p.seadra.png",
+    "base_experience": 154,
+    "name": "seadra",
+    "abilities": ["Poison-Point", "Sniper", "Damp"]
+  },
+  {
+    "weight": 1150,
+    "id": 111,
+    "types": ["ground", "rock"],
+    "image": "p.rhyhorn.png",
+    "base_experience": 69,
+    "name": "rhyhorn",
+    "abilities": ["Lightning-Rod", "Rock-Head", "Reckless"]
+  },
+  {
+    "weight": 150,
+    "id": 118,
+    "types": ["water"],
+    "image": "p.goldeen.png",
+    "base_experience": 64,
+    "name": "goldeen",
+    "abilities": ["Swift-Swim", "Water-Veil", "Lightning-Rod"]
+  },
+  {
+    "weight": 800,
+    "id": 121,
+    "types": ["water", "psychic"],
+    "image": "p.starmie.png",
+    "base_experience": 182,
+    "name": "starmie",
+    "abilities": ["Illuminate", "Natural-Cure", "Analytic"]
+  },
+  {
+    "weight": 406,
+    "id": 124,
+    "types": ["ice", "psychic"],
+    "image": "p.jynx.png",
+    "base_experience": 159,
+    "name": "jynx",
+    "abilities": ["Oblivious", "Forewarn", "Dry-Skin"]
+  },
+  {
+    "weight": 390,
+    "id": 119,
+    "types": ["water"],
+    "image": "p.seaking.png",
+    "base_experience": 158,
+    "name": "seaking",
+    "abilities": ["Swift-Swim", "Water-Veil", "Lightning-Rod"]
+  },
+  {
+    "weight": 345,
+    "id": 120,
+    "types": ["water"],
+    "image": "p.staryu.png",
+    "base_experience": 68,
+    "name": "staryu",
+    "abilities": ["Illuminate", "Natural-Cure", "Analytic"]
+  },
+  {
+    "weight": 300,
+    "id": 125,
+    "types": ["electric"],
+    "image": "p.electabuzz.png",
+    "base_experience": 172,
+    "name": "electabuzz",
+    "abilities": ["Static", "Vital-Spirit"]
+  },
+  {
+    "weight": 120,
+    "id": 40,
+    "types": ["normal", "fairy"],
+    "image": "p.wigglytuff.png",
+    "base_experience": 218,
+    "name": "wigglytuff",
+    "abilities": ["Cute-Charm", "Competitive", "Frisk"]
+  },
+  {
+    "weight": 124,
+    "id": 60,
+    "types": ["water"],
+    "image": "p.poliwag.png",
+    "base_experience": 60,
+    "name": "poliwag",
+    "abilities": ["Water-Absorb", "Damp", "Swift-Swim"]
+  },
+  {
+    "weight": 565,
+    "id": 64,
+    "types": ["psychic"],
+    "image": "p.kadabra.png",
+    "base_experience": 140,
+    "name": "kadabra",
+    "abilities": ["Synchronize", "Inner-Focus", "Magic-Guard"]
+  },
+  {
+    "weight": 1050,
+    "id": 75,
+    "types": ["rock", "ground"],
+    "image": "p.graveler.png",
+    "base_experience": 137,
+    "name": "graveler",
+    "abilities": ["Rock-Head", "Sturdy", "Sand-Veil"]
+  },
+  {
+    "weight": 1000,
+    "id": 3,
+    "types": ["grass", "poison"],
+    "image": "p.venusaur.png",
+    "base_experience": 263,
+    "name": "venusaur",
+    "abilities": ["Overgrow", "Chlorophyll"]
+  },
+  {
+    "weight": 3000,
+    "id": 76,
+    "types": ["rock", "ground"],
+    "image": "p.golem.png",
+    "base_experience": 223,
+    "name": "golem",
+    "abilities": ["Rock-Head", "Sturdy", "Sand-Veil"]
+  },
+  {
+    "weight": 445,
+    "id": 126,
+    "types": ["fire"],
+    "image": "p.magmar.png",
+    "base_experience": 173,
+    "name": "magmar",
+    "abilities": ["Flame-Body", "Vital-Spirit"]
+  },
+  {
+    "weight": 1325,
+    "id": 91,
+    "types": ["water", "ice"],
+    "image": "p.cloyster.png",
+    "base_experience": 184,
+    "name": "cloyster",
+    "abilities": ["Shell-Armor", "Skill-Link", "Overcoat"]
+  },
+  {
+    "weight": 100,
+    "id": 129,
+    "types": ["water"],
+    "image": "p.magikarp.png",
+    "base_experience": 40,
+    "name": "magikarp",
+    "abilities": ["Swift-Swim", "Rattled"]
+  },
+  {
+    "weight": 550,
+    "id": 127,
+    "types": ["bug"],
+    "image": "p.pinsir.png",
+    "base_experience": 175,
+    "name": "pinsir",
+    "abilities": ["Hyper-Cutter", "Mold-Breaker", "Moxie"]
+  },
+  {
+    "weight": 884,
+    "id": 128,
+    "types": ["normal"],
+    "image": "p.tauros.png",
+    "base_experience": 172,
+    "name": "tauros",
+    "abilities": ["Intimidate", "Anger-Point", "Sheer-Force"]
+  },
+  {
+    "weight": 2350,
+    "id": 130,
+    "types": ["water", "flying"],
+    "image": "p.gyarados.png",
+    "base_experience": 189,
+    "name": "gyarados",
+    "abilities": ["Intimidate", "Moxie"]
+  },
+  {
+    "weight": 2200,
+    "id": 131,
+    "types": ["water", "ice"],
+    "image": "p.lapras.png",
+    "base_experience": 187,
+    "name": "lapras",
+    "abilities": ["Water-Absorb", "Shell-Armor", "Hydration"]
+  },
+  {
+    "weight": 365,
+    "id": 137,
+    "types": ["normal"],
+    "image": "p.porygon.png",
+    "base_experience": 79,
+    "name": "porygon",
+    "abilities": ["Trace", "Download", "Analytic"]
+  },
+  {
+    "weight": 290,
+    "id": 134,
+    "types": ["water"],
+    "image": "p.vaporeon.png",
+    "base_experience": 184,
+    "name": "vaporeon",
+    "abilities": ["Water-Absorb", "Hydration"]
+  },
+  {
+    "weight": 75,
+    "id": 138,
+    "types": ["rock", "water"],
+    "image": "p.omanyte.png",
+    "base_experience": 71,
+    "name": "omanyte",
+    "abilities": ["Swift-Swim", "Shell-Armor", "Weak-Armor"]
+  },
+  {
+    "weight": 115,
+    "id": 140,
+    "types": ["rock", "water"],
+    "image": "p.kabuto.png",
+    "base_experience": 71,
+    "name": "kabuto",
+    "abilities": ["Swift-Swim", "Battle-Armor", "Weak-Armor"]
+  },
+  {
+    "weight": 350,
+    "id": 139,
+    "types": ["rock", "water"],
+    "image": "p.omastar.png",
+    "base_experience": 173,
+    "name": "omastar",
+    "abilities": ["Swift-Swim", "Shell-Armor", "Weak-Armor"]
+  },
+  {
+    "weight": 590,
+    "id": 142,
+    "types": ["rock", "flying"],
+    "image": "p.aerodactyl.png",
+    "base_experience": 180,
+    "name": "aerodactyl",
+    "abilities": ["Rock-Head", "Pressure", "Unnerve"]
+  },
+  {
+    "weight": 33,
+    "id": 147,
+    "types": ["dragon"],
+    "image": "p.dratini.png",
+    "base_experience": 60,
+    "name": "dratini",
+    "abilities": ["Shed-Skin", "Marvel-Scale"]
+  },
+  {
+    "weight": 4600,
+    "id": 143,
+    "types": ["normal"],
+    "image": "p.snorlax.png",
+    "base_experience": 189,
+    "name": "snorlax",
+    "abilities": ["Immunity", "Thick-Fat", "Gluttony"]
+  },
+  {
+    "weight": 1220,
+    "id": 150,
+    "types": ["psychic"],
+    "image": "p.mewtwo.png",
+    "base_experience": 340,
+    "name": "mewtwo",
+    "abilities": ["Pressure", "Unnerve"]
+  },
+  {
+    "weight": 165,
+    "id": 148,
+    "types": ["dragon"],
+    "image": "p.dragonair.png",
+    "base_experience": 147,
+    "name": "dragonair",
+    "abilities": ["Shed-Skin", "Marvel-Scale"]
+  },
+  {
+    "weight": 324,
+    "id": 96,
+    "types": ["psychic"],
+    "image": "p.drowzee.png",
+    "base_experience": 66,
+    "name": "drowzee",
+    "abilities": ["Insomnia", "Forewarn", "Inner-Focus"]
+  },
+  {
+    "weight": 300,
+    "id": 26,
+    "types": ["electric"],
+    "image": "p.raichu.png",
+    "base_experience": 243,
+    "name": "raichu",
+    "abilities": ["Static", "Lightning-Rod"]
+  },
+  {
+    "weight": 905,
+    "id": 6,
+    "types": ["fire", "flying"],
+    "image": "p.charizard.png",
+    "base_experience": 267,
+    "name": "charizard",
+    "abilities": ["Blaze", "Solar-Power"]
+  },
+  {
+    "weight": 155,
+    "id": 71,
+    "types": ["grass", "poison"],
+    "image": "p.victreebel.png",
+    "base_experience": 221,
+    "name": "victreebel",
+    "abilities": ["Chlorophyll", "Gluttony"]
+  },
+  {
+    "weight": 90,
+    "id": 7,
+    "types": ["water"],
+    "image": "p.squirtle.png",
+    "base_experience": 63,
+    "name": "squirtle",
+    "abilities": ["Torrent", "Rain-Dish"]
+  },
+  {
+    "weight": 120,
+    "id": 27,
+    "types": ["ground"],
+    "image": "p.sandshrew.png",
+    "base_experience": 60,
+    "name": "sandshrew",
+    "abilities": ["Sand-Veil", "Sand-Rush"]
+  },
+  {
+    "weight": 650,
+    "id": 24,
+    "types": ["poison"],
+    "image": "p.arbok.png",
+    "base_experience": 157,
+    "name": "arbok",
+    "abilities": ["Intimidate", "Shed-Skin", "Unnerve"]
+  },
+  {
+    "weight": 333,
+    "id": 51,
+    "types": ["ground"],
+    "image": "p.dugtrio.png",
+    "base_experience": 149,
+    "name": "dugtrio",
+    "abilities": ["Sand-Veil", "Arena-Trap", "Sand-Force"]
+  },
+  {
+    "weight": 300,
+    "id": 17,
+    "types": ["normal", "flying"],
+    "image": "p.pidgeotto.png",
+    "base_experience": 122,
+    "name": "pidgeotto",
+    "abilities": ["Keen-Eye", "Tangled-Feet", "Big-Pecks"]
+  },
+  {
+    "weight": 600,
+    "id": 146,
+    "types": ["fire", "flying"],
+    "image": "p.moltres.png",
+    "base_experience": 290,
+    "name": "moltres",
+    "abilities": ["Pressure", "Flame-Body"]
+  },
+  {
+    "weight": 620,
+    "id": 34,
+    "types": ["poison", "ground"],
+    "image": "p.nidoking.png",
+    "base_experience": 253,
+    "name": "nidoking",
+    "abilities": ["Poison-Point", "Rivalry", "Sheer-Force"]
+  },
+  {
+    "weight": 195,
+    "id": 63,
+    "types": ["psychic"],
+    "image": "p.abra.png",
+    "base_experience": 62,
+    "name": "abra",
+    "abilities": ["Synchronize", "Inner-Focus", "Magic-Guard"]
+  },
+  {
+    "weight": 185,
+    "id": 20,
+    "types": ["normal"],
+    "image": "p.raticate.png",
+    "base_experience": 145,
+    "name": "raticate",
+    "abilities": ["Run-Away", "Guts", "Hustle"]
+  },
+  {
+    "weight": 196,
+    "id": 54,
+    "types": ["water"],
+    "image": "p.psyduck.png",
+    "base_experience": 64,
+    "name": "psyduck",
+    "abilities": ["Damp", "Cloud-Nine", "Swift-Swim"]
+  },
+  {
+    "weight": 75,
+    "id": 35,
+    "types": ["fairy"],
+    "image": "p.clefairy.png",
+    "base_experience": 113,
+    "name": "clefairy",
+    "abilities": ["Cute-Charm", "Magic-Guard", "Friend-Guard"]
+  },
+  {
+    "weight": 300,
+    "id": 89,
+    "types": ["poison"],
+    "image": "p.muk.png",
+    "base_experience": 175,
+    "name": "muk",
+    "abilities": ["Stench", "Sticky-Hold", "Poison-Touch"]
+  },
+  {
+    "weight": 554,
+    "id": 144,
+    "types": ["ice", "flying"],
+    "image": "p.articuno.png",
+    "base_experience": 290,
+    "name": "articuno",
+    "abilities": ["Pressure", "Snow-Cloak"]
+  },
+  {
+    "weight": 405,
+    "id": 141,
+    "types": ["rock", "water"],
+    "image": "p.kabutops.png",
+    "base_experience": 173,
+    "name": "kabutops",
+    "abilities": ["Swift-Swim", "Battle-Armor", "Weak-Armor"]
+  },
+  {
+    "weight": 320,
+    "id": 12,
+    "types": ["bug", "flying"],
+    "image": "p.butterfree.png",
+    "base_experience": 198,
+    "name": "butterfree",
+    "abilities": ["Compound-Eyes", "Tinted-Lens"]
+  },
+  {
+    "weight": 200,
+    "id": 74,
+    "types": ["rock", "ground"],
+    "image": "p.geodude.png",
+    "base_experience": 60,
+    "name": "geodude",
+    "abilities": ["Rock-Head", "Sturdy", "Sand-Veil"]
+  },
+  {
+    "weight": 190,
+    "id": 58,
+    "types": ["fire"],
+    "image": "p.growlithe.png",
+    "base_experience": 70,
+    "name": "growlithe",
+    "abilities": ["Intimidate", "Flash-Fire", "Justified"]
+  },
+  {
+    "weight": 54,
+    "id": 46,
+    "types": ["bug", "grass"],
+    "image": "p.paras.png",
+    "base_experience": 57,
+    "name": "paras",
+    "abilities": ["Effect-Spore", "Dry-Skin", "Damp"]
+  },
+  {
+    "weight": 2100,
+    "id": 95,
+    "types": ["rock", "ground"],
+    "image": "p.onix.png",
+    "base_experience": 77,
+    "name": "onix",
+    "abilities": ["Rock-Head", "Sturdy", "Weak-Armor"]
+  },
+  {
+    "weight": 800,
+    "id": 115,
+    "types": ["normal"],
+    "image": "p.kangaskhan.png",
+    "base_experience": 172,
+    "name": "kangaskhan",
+    "abilities": ["Early-Bird", "Scrappy", "Inner-Focus"]
+  },
+  {
+    "weight": 560,
+    "id": 123,
+    "types": ["bug", "flying"],
+    "image": "p.scyther.png",
+    "base_experience": 100,
+    "name": "scyther",
+    "abilities": ["Swarm", "Technician", "Steadfast"]
+  },
+  {
+    "weight": 526,
+    "id": 145,
+    "types": ["electric", "flying"],
+    "image": "p.zapdos.png",
+    "base_experience": 290,
+    "name": "zapdos",
+    "abilities": ["Pressure", "Static"]
+  },
+  {
+    "weight": 40,
+    "id": 132,
+    "types": ["normal"],
+    "image": "p.ditto.png",
+    "base_experience": 101,
+    "name": "ditto",
+    "abilities": ["Limber", "Imposter"]
+  },
+  {
+    "weight": 65,
+    "id": 104,
+    "types": ["ground"],
+    "image": "p.cubone.png",
+    "base_experience": 64,
+    "name": "cubone",
+    "abilities": ["Rock-Head", "Lightning-Rod", "Battle-Armor"]
+  },
+  {
+    "weight": 1200,
+    "id": 87,
+    "types": ["water", "ice"],
+    "image": "p.dewgong.png",
+    "base_experience": 166,
+    "name": "dewgong",
+    "abilities": ["Thick-Fat", "Hydration", "Ice-Body"]
+  },
+  {
+    "weight": 545,
+    "id": 122,
+    "types": ["psychic", "fairy"],
+    "image": "p.mr-mime.png",
+    "base_experience": 161,
+    "name": "mr-mime",
+    "abilities": ["Soundproof", "Filter", "Technician"]
+  },
+  {
+    "weight": 250,
+    "id": 136,
+    "types": ["fire"],
+    "image": "p.flareon.png",
+    "base_experience": 184,
+    "name": "flareon",
+    "abilities": ["Flash-Fire", "Guts"]
+  },
+  {
+    "weight": 245,
+    "id": 135,
+    "types": ["electric"],
+    "image": "p.jolteon.png",
+    "base_experience": 184,
+    "name": "jolteon",
+    "abilities": ["Volt-Absorb", "Quick-Feet"]
+  }
+]
