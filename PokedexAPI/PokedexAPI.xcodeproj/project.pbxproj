@@ -10,6 +10,7 @@
 		F0B2F728291AF1200088D577 /* PokedexAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B2F727291AF1200088D577 /* PokedexAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0B2F730291AF2370088D577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B2F72E291AF2370088D577 /* Assets.xcassets */; };
 		F0B2F731291AF2370088D577 /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = F0B2F72F291AF2370088D577 /* pokemons.json */; };
+		F0B2F753291AF6100088D577 /* PokedexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B2F752291AF6100088D577 /* PokedexAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		F0B2F727291AF1200088D577 /* PokedexAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokedexAPI.h; sourceTree = "<group>"; };
 		F0B2F72E291AF2370088D577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B2F72F291AF2370088D577 /* pokemons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
+		F0B2F752291AF6100088D577 /* PokedexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 				F0B2F72E291AF2370088D577 /* Assets.xcassets */,
 				F0B2F72F291AF2370088D577 /* pokemons.json */,
 				F0B2F727291AF1200088D577 /* PokedexAPI.h */,
+				F0B2F752291AF6100088D577 /* PokedexAPI.swift */,
 			);
 			path = PokedexAPI;
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					F0B2F723291AF1200088D577 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B2F753291AF6100088D577 /* PokedexAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 		F0B2F72C291AF1200088D577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -287,7 +293,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.millan.PokedexAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,6 +304,7 @@
 		F0B2F72D291AF1200088D577 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -315,6 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.millan.PokedexAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
