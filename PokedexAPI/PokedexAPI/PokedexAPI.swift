@@ -32,11 +32,16 @@ public struct Pokemon: Decodable {
         self.types = types
         self.abilities = abilities
     }
-    
-    public final PokedexAPI {
-        func getPokemon() -> [Pokemon] {
-            return[]
+}
+
+public final PokedexAPI {
+    func getPokemon() -> [Pokemon] {
+        guard let url = Bundle(identifier: "ios.xml.PokedexAPI")?.url(forResource: "pokemons", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let pokemons = try? JSONDecoder().decode([Pokemon].self, from: data)
+        else {
+            return []
         }
+        return pokemons
     }
-    
 }
