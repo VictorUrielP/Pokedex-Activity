@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9D795C2291AF12300E493B1 /* PokedexAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9D795C1291AF12300E493B1 /* PokedexAPI.docc */; };
 		C9D795C8291AF12400E493B1 /* PokedexAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D795BD291AF12300E493B1 /* PokedexAPI.framework */; };
 		C9D795CD291AF12400E493B1 /* PokedexAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D795CC291AF12400E493B1 /* PokedexAPITests.swift */; };
 		C9D795CE291AF12400E493B1 /* PokedexAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D795C0291AF12300E493B1 /* PokedexAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		C9D795BD291AF12300E493B1 /* PokedexAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PokedexAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D795C0291AF12300E493B1 /* PokedexAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokedexAPI.h; sourceTree = "<group>"; };
-		C9D795C1291AF12300E493B1 /* PokedexAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PokedexAPI.docc; sourceTree = "<group>"; };
 		C9D795C7291AF12400E493B1 /* PokedexAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D795CC291AF12400E493B1 /* PokedexAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAPITests.swift; sourceTree = "<group>"; };
 		C9D795DB291AF47C00E493B1 /* pokemons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemons.json; sourceTree = SOURCE_ROOT; };
@@ -80,7 +78,6 @@
 				C9D795DF291AF4B400E493B1 /* Assets.xcassets */,
 				C9D795DB291AF47C00E493B1 /* pokemons.json */,
 				C9D795C0291AF12300E493B1 /* PokedexAPI.h */,
-				C9D795C1291AF12300E493B1 /* PokedexAPI.docc */,
 				C9D79601291AF72A00E493B1 /* PokedexAPI.swift */,
 			);
 			path = PokedexAPI;
@@ -205,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D795C2291AF12300E493B1 /* PokedexAPI.docc in Sources */,
 				C9D79602291AF72A00E493B1 /* PokedexAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
