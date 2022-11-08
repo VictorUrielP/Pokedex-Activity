@@ -10,7 +10,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    private let mainViewControllerComposer = MainViewControllerComposer()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,18 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let pokedexViewController = PokedexViewController()
-        let pokedexNavController = UINavigationController(rootViewController: pokedexViewController)
-        pokedexViewController.tabBarItem.title = "Pokedex"
-        pokedexViewController.tabBarItem.image = UIImage(systemName: "house")
-        
-        let mainStoryboard = UIStoryboard(name: "MainViewController", bundle: nil)
-        guard let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else {
-            return
-        }
-        mainViewController.customViewControllers = [pokedexNavController]
-        
-        window?.rootViewController = mainViewController
+        window?.rootViewController = mainViewControllerComposer.mainViewControllerComposed()
         window?.makeKeyAndVisible()
     }
 

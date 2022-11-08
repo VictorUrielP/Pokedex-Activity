@@ -14,6 +14,9 @@
 		D1F4DBBE291AFC2200F9F077 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4DBBD291AFC2200F9F077 /* PokedexViewController.swift */; };
 		D1F4DBC1291AFFE200F9F077 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F4DBC0291AFFE200F9F077 /* MainViewController.storyboard */; };
 		D1F4DBC3291B004200F9F077 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4DBC2291B004200F9F077 /* MainViewController.swift */; };
+		D1F4DBC6291B09CF00F9F077 /* MainViewControllerComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4DBC5291B09CF00F9F077 /* MainViewControllerComposer.swift */; };
+		D1F4DBC8291B09E700F9F077 /* MainViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4DBC7291B09E700F9F077 /* MainViewControllerFactory.swift */; };
+		D1F4DBCA291B09FE00F9F077 /* PokedexViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4DBC9291B09FE00F9F077 /* PokedexViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D1F4DBBD291AFC2200F9F077 /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		D1F4DBC0291AFFE200F9F077 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		D1F4DBC2291B004200F9F077 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D1F4DBC5291B09CF00F9F077 /* MainViewControllerComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerComposer.swift; sourceTree = "<group>"; };
+		D1F4DBC7291B09E700F9F077 /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
+		D1F4DBC9291B09FE00F9F077 /* PokedexViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		D1F4DBA5291AF43A00F9F077 /* PokedexApp */ = {
 			isa = PBXGroup;
 			children = (
+				D1F4DBC4291B09A900F9F077 /* Composition */,
 				D1F4DBBF291AFFCC00F9F077 /* Main */,
 				D1F4DBBC291AFBE500F9F077 /* Pokedex */,
 				D1F4DBA6291AF43A00F9F077 /* AppDelegate.swift */,
@@ -84,6 +91,16 @@
 				D1F4DBC2291B004200F9F077 /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		D1F4DBC4291B09A900F9F077 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4DBC5291B09CF00F9F077 /* MainViewControllerComposer.swift */,
+				D1F4DBC7291B09E700F9F077 /* MainViewControllerFactory.swift */,
+				D1F4DBC9291B09FE00F9F077 /* PokedexViewControllerFactory.swift */,
+			);
+			path = Composition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1F4DBC8291B09E700F9F077 /* MainViewControllerFactory.swift in Sources */,
+				D1F4DBC6291B09CF00F9F077 /* MainViewControllerComposer.swift in Sources */,
+				D1F4DBCA291B09FE00F9F077 /* PokedexViewControllerFactory.swift in Sources */,
 				D1F4DBBE291AFC2200F9F077 /* PokedexViewController.swift in Sources */,
 				D1F4DBA7291AF43A00F9F077 /* AppDelegate.swift in Sources */,
 				D1F4DBA9291AF43A00F9F077 /* SceneDelegate.swift in Sources */,
