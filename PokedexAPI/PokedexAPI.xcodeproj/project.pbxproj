@@ -10,6 +10,7 @@
 		DD501761291AF11700B9CF2A /* PokedexAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = DD501760291AF11700B9CF2A /* PokedexAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD501769291AF22900B9CF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD501767291AF22900B9CF2A /* Assets.xcassets */; };
 		DD50176A291AF22900B9CF2A /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = DD501768291AF22900B9CF2A /* pokemons.json */; };
+		DD50178C291AF5FD00B9CF2A /* PokedexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50178B291AF5FD00B9CF2A /* PokedexAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		DD501760291AF11700B9CF2A /* PokedexAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokedexAPI.h; sourceTree = "<group>"; };
 		DD501767291AF22900B9CF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD501768291AF22900B9CF2A /* pokemons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
+		DD50178B291AF5FD00B9CF2A /* PokedexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 				DD501767291AF22900B9CF2A /* Assets.xcassets */,
 				DD501768291AF22900B9CF2A /* pokemons.json */,
 				DD501760291AF11700B9CF2A /* PokedexAPI.h */,
+				DD50178B291AF5FD00B9CF2A /* PokedexAPI.swift */,
 			);
 			path = PokedexAPI;
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					DD50175C291AF11700B9CF2A = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD50178C291AF5FD00B9CF2A /* PokedexAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 		DD501765291AF11700B9CF2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -288,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,6 +303,7 @@
 		DD501766291AF11700B9CF2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
