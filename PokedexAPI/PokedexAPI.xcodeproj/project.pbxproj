@@ -13,6 +13,7 @@
 		C9D795CE291AF12400E493B1 /* PokedexAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D795C0291AF12300E493B1 /* PokedexAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9D795DC291AF47C00E493B1 /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = C9D795DB291AF47C00E493B1 /* pokemons.json */; };
 		C9D795E0291AF4B400E493B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D795DF291AF4B400E493B1 /* Assets.xcassets */; };
+		C9D79602291AF72A00E493B1 /* PokedexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79601291AF72A00E493B1 /* PokedexAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		C9D795CC291AF12400E493B1 /* PokedexAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAPITests.swift; sourceTree = "<group>"; };
 		C9D795DB291AF47C00E493B1 /* pokemons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemons.json; sourceTree = SOURCE_ROOT; };
 		C9D795DF291AF4B400E493B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C9D79601291AF72A00E493B1 /* PokedexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				C9D795DB291AF47C00E493B1 /* pokemons.json */,
 				C9D795C0291AF12300E493B1 /* PokedexAPI.h */,
 				C9D795C1291AF12300E493B1 /* PokedexAPI.docc */,
+				C9D79601291AF72A00E493B1 /* PokedexAPI.swift */,
 			);
 			path = PokedexAPI;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D795C2291AF12300E493B1 /* PokedexAPI.docc in Sources */,
+				C9D79602291AF72A00E493B1 /* PokedexAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +408,7 @@
 		C9D795D5291AF12400E493B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,6 +429,7 @@
 		C9D795D6291AF12400E493B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
