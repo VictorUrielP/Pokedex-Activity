@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EE79607E291AF12300A9838A /* PokedexAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = EE79607D291AF12300A9838A /* PokedexAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE796085291AF22D00A9838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE796084291AF22D00A9838A /* Assets.xcassets */; };
+		EE796087291AF23600A9838A /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = EE796086291AF23600A9838A /* pokemons.json */; };
+		EE7960A9291AF5FE00A9838A /* PokedexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7960A8291AF5FE00A9838A /* PokedexAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE79607A291AF12300A9838A /* PokedexAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PokedexAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE79607D291AF12300A9838A /* PokedexAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokedexAPI.h; sourceTree = "<group>"; };
+		EE796084291AF22D00A9838A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE796086291AF23600A9838A /* pokemons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
+		EE7960A8291AF5FE00A9838A /* PokedexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +51,10 @@
 		EE79607C291AF12300A9838A /* PokedexAPI */ = {
 			isa = PBXGroup;
 			children = (
+				EE796086291AF23600A9838A /* pokemons.json */,
+				EE796084291AF22D00A9838A /* Assets.xcassets */,
 				EE79607D291AF12300A9838A /* PokedexAPI.h */,
+				EE7960A8291AF5FE00A9838A /* PokedexAPI.swift */,
 			);
 			path = PokedexAPI;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 				TargetAttributes = {
 					EE796079291AF12300A9838A = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -119,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE796085291AF22D00A9838A /* Assets.xcassets in Resources */,
+				EE796087291AF23600A9838A /* pokemons.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7960A9291AF5FE00A9838A /* PokedexAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		EE796082291AF12300A9838A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +303,7 @@
 		EE796083291AF12300A9838A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
