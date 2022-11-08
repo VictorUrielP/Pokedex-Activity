@@ -13,6 +13,7 @@
 		1D7BBA66291AF48000F56442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BBA64291AF48000F56442 /* Main.storyboard */; };
 		1D7BBA68291AF48100F56442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BBA67291AF48100F56442 /* Assets.xcassets */; };
 		1D7BBA6B291AF48100F56442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BBA69291AF48100F56442 /* LaunchScreen.storyboard */; };
+		1D7BBA7B291AF7B200F56442 /* pokemonApi in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BBA7A291AF7B200F56442 /* pokemonApi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1D7BBA67291AF48100F56442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7BBA6A291AF48100F56442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7BBA6C291AF48100F56442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7BBA7A291AF7B200F56442 /* pokemonApi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pokemonApi; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		1D7BBA52291AF48000F56442 = {
 			isa = PBXGroup;
 			children = (
+				1D7BBA7A291AF7B200F56442 /* pokemonApi */,
 				1D7BBA5D291AF48000F56442 /* appPokemon */,
 				1D7BBA5C291AF48000F56442 /* Products */,
 			);
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7BBA6B291AF48100F56442 /* LaunchScreen.storyboard in Resources */,
+				1D7BBA7B291AF7B200F56442 /* pokemonApi in Resources */,
 				1D7BBA68291AF48100F56442 /* Assets.xcassets in Resources */,
 				1D7BBA66291AF48000F56442 /* Main.storyboard in Resources */,
 			);
