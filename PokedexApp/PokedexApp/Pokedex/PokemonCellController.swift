@@ -10,6 +10,7 @@ import UIKit
 final class PokemonCellController: UITableViewCell {
     static let identifier = String(describing: PokemonCellController.self)
     
+    @available(iOS 14.0, *)
     func configured(with pokemon: PokemonCellViewData) -> UITableViewCell {
         var config = defaultContentConfiguration()
         config.text = pokemon.name
