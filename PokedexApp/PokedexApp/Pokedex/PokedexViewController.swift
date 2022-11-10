@@ -12,7 +12,15 @@ final class PokedexViewController: UIViewController {
     
     private lazy var tableView = UITableView(frame: view.bounds, style: .plain)
     private let pokedex = PokedexAPI()
-    private(set) lazy var pokemons: [PokemonCellViewData] = Array(pokedex.adaptToPokemonCellViewData()[...3])
+    private(set) lazy var pokemons: [PokemonCellViewData] = Array(pokedex.adaptToPokemonCellViewData()[...9]) {
+        didSet {
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    private var countPokemon: Int = 0
+    private(set) lazy var allPokemons: [PokemonCellViewData] = Array(pokedex.adaptToPokemonCellViewData())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +42,18 @@ extension PokedexViewController: UITableViewDelegate {
         let pokemonDetailViewData = PokemonDetailViewData(image: pokemonCellViewData.image, name: pokemonCellViewData.name)
         let detailViewController =  DetailViewController(pokemonDetailViewData: pokemonDetailViewData)
         navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == pokemons.count - 1 && countPokemon < allPokemons.count {
+            countPokemon = countPokemon + 10
+            if countPokemon < allPokemons.count {
+                let arrays = Array(pokedex.adaptToPokemonCellViewData()[countPokemon...countPokemon + 9])
+                pokemons.append(contentsOf: arrays)
+            }
+        } else {
+            return
+        }
     }
 }
 
