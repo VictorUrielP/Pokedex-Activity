@@ -9,6 +9,8 @@ import UIKit
 
 class FavoriteCollectionViewCell: UICollectionViewCell {
     
+    static let indentifier = String(describing: FavoriteCollectionViewCell.self)
+    
     @IBOutlet weak var pokemonImage: UIImageView!
     
     @IBOutlet weak var pokemonName: UILabel!
@@ -17,8 +19,9 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setInformation() {
-        
+    func setInformation(with pokemon: PokemonCellViewData) {
+        pokemonImage.image = pokemon.image
+        pokemonName.text = pokemon.name
     }
     
 }
