@@ -8,6 +8,8 @@
 import UIKit
 
 struct PokemonCellViewData {
+    let id: Int
     let image: UIImage
     let name: String
+    let favoriteImage: UIImage
 }
