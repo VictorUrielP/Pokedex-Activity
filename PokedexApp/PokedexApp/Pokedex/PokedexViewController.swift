@@ -14,9 +14,11 @@ final class PokedexViewController: UIViewController {
     private let pokedex = PokedexAPI()
     private(set) lazy var pokemons: [PokemonCellViewData] = Array(pokedex.adaptToPokemonCellViewData()[...9]) {
         didSet {
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                [weak self] in
                 self?.tableView.reloadData()
-            }
+                
+            })
         }
     }
     private var countPokemon: Int = 0
@@ -37,7 +39,6 @@ final class PokedexViewController: UIViewController {
     
     private func createSpinner() -> UIView {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
-        spinner = UIActivityIndicatorView()
         spinner.center = footerView.center
         footerView.addSubview(spinner)
         spinner.startAnimating()
@@ -54,17 +55,19 @@ extension PokedexViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        tableView.tableFooterView = createSpinner()
         if indexPath.row == pokemons.count - 1 && countPokemon < allPokemons.count {
             countPokemon = countPokemon + 10
             if countPokemon < allPokemons.count {
+                tableView.tableFooterView = createSpinner()
                 let arrays = Array(pokedex.adaptToPokemonCellViewData()[countPokemon...countPokemon + 9])
                 pokemons.append(contentsOf: arrays)
+            } else {
+                spinner.stopAnimating()
+                tableView.tableFooterView = nil
             }
         } else {
             return
         }
-        spinner.stopAnimating()
     }
 }
 
