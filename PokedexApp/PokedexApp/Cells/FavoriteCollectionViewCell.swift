@@ -19,8 +19,8 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setInformation(with pokemon: PokemonCellViewData) {
-        pokemonImage.image = pokemon.image
+    func setInformation(with pokemon: FavoritesPokemon) {
+        pokemonImage = pokemon.image
         pokemonName.text = pokemon.name
     }
     
