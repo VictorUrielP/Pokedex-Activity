@@ -36,7 +36,10 @@ public struct Pokemon: Decodable {
 }
 
 public final class PokedexAPI {
-    func getPokemons() -> [Pokemon] {
+    
+    public init() { }
+    
+    public func getPokemons() -> [Pokemon] {
         guard let url = Bundle(identifier: "com.victorurielp.PokedexAPI")?.url(forResource: "pokemons", withExtension: "json"),
             let data = try? Data(contentsOf: url),
             let pokemons = try? JSONDecoder().decode([Pokemon].self, from: data)
