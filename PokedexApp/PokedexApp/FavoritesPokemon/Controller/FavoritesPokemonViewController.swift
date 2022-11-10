@@ -11,7 +11,7 @@ class FavoritesPokemonViewController: UIViewController, UICollectionViewDelegate
 
     @IBOutlet weak var favoritesCollection: UICollectionView!
     
-    var arrData : [FavoritesPokemon] = []
+    var arrDataFavoritePokemon : [FavoritesPokemon] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,18 +19,20 @@ class FavoritesPokemonViewController: UIViewController, UICollectionViewDelegate
         favoritesCollection.delegate = self
         favoritesCollection.dataSource = self
     }
+    
     private func registerNibs() {
         favoritesCollection.register(UINib(nibName:"FavoriteCollectionViewCell" , bundle: nil), forCellWithReuseIdentifier: FavoriteCollectionViewCell.indentifier)
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrData.count
+        return arrDataFavoritePokemon.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = favoritesCollection.dequeueReusableCell(withReuseIdentifier: FavoriteCollectionViewCell.indentifier , for: indexPath) as? FavoriteCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.setInformation(with: arrData[indexPath.row])
+        cell.setInformation(with: arrDataFavoritePokemon[indexPath.row])
         return cell
     }
 }
