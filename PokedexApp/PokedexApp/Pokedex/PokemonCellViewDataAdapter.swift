@@ -16,6 +16,6 @@ extension PokedexAPI {
     
     private func map(pokemon: Pokemon) -> PokemonCellViewData {
         let image = UIImage(named: pokemon.image, in: Bundle(identifier: "com.victorurielp.PokedexAPI"), with: nil)
-        return PokemonCellViewData(image: image, name: pokemon.name)
+        return PokemonCellViewData(image: image ?? UIImage(), name: pokemon.name)
     }
 }

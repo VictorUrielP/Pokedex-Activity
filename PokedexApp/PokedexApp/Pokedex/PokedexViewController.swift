@@ -29,7 +29,12 @@ final class PokedexViewController: UIViewController {
 }
 
 extension PokedexViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pokemonCellViewData = pokemons[indexPath.row]
+        let pokemonDetailViewData = PokemonDetailViewData(image: pokemonCellViewData.image, name: pokemonCellViewData.name)
+        let detailViewController =  DetailViewController(pokemonDetailViewData: pokemonDetailViewData)
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
 
 extension PokedexViewController: UITableViewDataSource {
