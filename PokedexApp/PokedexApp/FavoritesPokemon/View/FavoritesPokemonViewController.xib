@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wXh-Fg-8N3">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="116.5" width="414" height="745.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="071-Vp-Ofj">
                         <size key="itemSize" width="128" height="128"/>
@@ -29,16 +29,25 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Favorite Pokemons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-69-Mjs">
+                    <rect key="frame" x="8" y="68" width="398" height="32.5"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wXh-Fg-8N3" secondAttribute="trailing" id="GtS-Rj-iIw"/>
-                <constraint firstItem="wXh-Fg-8N3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aSD-VP-x4h"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wXh-Fg-8N3" secondAttribute="bottom" id="agV-jg-s6Y"/>
-                <constraint firstItem="wXh-Fg-8N3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zeo-yR-dKd"/>
+                <constraint firstItem="wXh-Fg-8N3" firstAttribute="top" secondItem="R8M-69-Mjs" secondAttribute="bottom" constant="16" id="49G-9j-2Nx"/>
+                <constraint firstItem="R8M-69-Mjs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="YwA-Be-x6d"/>
+                <constraint firstItem="wXh-Fg-8N3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="grq-az-M9P"/>
+                <constraint firstItem="R8M-69-Mjs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="hEL-9D-7Cd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R8M-69-Mjs" secondAttribute="trailing" constant="8" id="j7Q-C3-jnm"/>
+                <constraint firstItem="wXh-Fg-8N3" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="qwh-WV-hgh"/>
+                <constraint firstItem="wXh-Fg-8N3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ttj-ij-P5G"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="96"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
