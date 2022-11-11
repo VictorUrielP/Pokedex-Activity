@@ -12,8 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     private let mainViewControllerComposer = MainViewControllerComposer()
-    private let favoritePokemonCache = FavoritePokemonCache()
-    private lazy var pokedexViewController = PokedexViewControllerFactory().make(favoritesPokemonCache: favoritePokemonCache)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -22,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        window?.rootViewController = mainViewControllerComposer.mainViewControllerComposed(pokedexViewController: pokedexViewController)
+        window?.rootViewController = mainViewControllerComposer.mainViewControllerComposed()
         window?.makeKeyAndVisible()
     }
 

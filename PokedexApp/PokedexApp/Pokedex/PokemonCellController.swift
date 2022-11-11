@@ -18,9 +18,8 @@ final class PokemonCellController: UITableViewCell {
     
     private let favoriteIcon: UIButton = {
         let btnFavorite = UIButton()
-        btnFavorite.setImage(UIImage(systemName: "heart"), for: .normal)
         btnFavorite.translatesAutoresizingMaskIntoConstraints = false
-        btnFavorite.addTarget(PokemonCellController.self, action: #selector(setFavorites(_:)), for: .touchUpInside)
+        btnFavorite.addTarget(self, action: #selector(setFavorites(_:)), for: .touchUpInside)
         return btnFavorite
     }()
     

@@ -16,16 +16,18 @@ final class FavoritesPokemonViewControllerFactory {
 }
 
 final class MainViewControllerComposer {
+    private let favoritePokemonCache = FavoritePokemonCache()
     private let mainViewController = MainViewControllerFactory().make()
-    private let FavoritesViewController = FavoritesPokemonViewControllerFactory().make()
+    private let favoritesViewController = FavoritesPokemonViewControllerFactory().make()
+    private lazy var pokedexViewController = PokedexViewControllerFactory().make(favoritesPokemonCache: favoritePokemonCache)
     
-    func mainViewControllerComposed(pokedexViewController: UIViewController) -> UIViewController {
+    func mainViewControllerComposed() -> UIViewController {
         pokedexViewController.tabBarItem.title = "Pokedex"
         pokedexViewController.tabBarItem.image = UIImage(systemName: "house")
         
-        FavoritesViewController.tabBarItem.title = "Favorites"
-        FavoritesViewController.tabBarItem.image = UIImage(systemName: "star.fill")
-        mainViewController.customViewControllers = [pokedexViewController, FavoritesViewController]
+        favoritesViewController.tabBarItem.title = "Favorites"
+        favoritesViewController.tabBarItem.image = UIImage(systemName: "star.fill")
+        mainViewController.customViewControllers = [pokedexViewController, favoritesViewController]
         return mainViewController
     }
 }

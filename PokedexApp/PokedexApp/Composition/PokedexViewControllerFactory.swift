@@ -11,7 +11,7 @@ final class PokedexViewControllerFactory {
     func make(favoritesPokemonCache: FavoritePokemonCache) -> UIViewController {
         let pokedexViewController = PokedexViewController()
         let pokedexViewData = PokedexViewModel(favoritePokemonCache: favoritesPokemonCache)
-        pokedexViewController.pokedexViewData = pokedexViewData
+        pokedexViewController.pokedexViewModel = pokedexViewData
         let pokedexNavController = UINavigationController(rootViewController: pokedexViewController)
         return pokedexNavController
     }

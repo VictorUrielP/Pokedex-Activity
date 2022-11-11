@@ -7,8 +7,7 @@
 
 import Foundation
 final class FavoritePokemonCache {
-    var favoritepokemons: [FavoritePokemon] = []
-    
+    private var favoritepokemons: [FavoritePokemon] = []
     
     func add(favoritePokemon: FavoritePokemon) {
         favoritepokemons.append(favoritePokemon)
@@ -21,7 +20,6 @@ final class FavoritePokemonCache {
     
     func searchPokemon(with id: Int) -> Bool {
         !favoritepokemons.filter( { $0.id == id }).isEmpty
-        
     }
 }
 

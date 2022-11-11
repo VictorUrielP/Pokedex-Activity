@@ -12,7 +12,7 @@ final class PokedexViewController: UIViewController {
     private lazy var tableView = UITableView(frame: view.bounds, style: .plain)
     private lazy var spinner = UIActivityIndicatorView()
     
-    var pokedexViewData: PokedexViewModel?
+    var pokedexViewModel: PokedexViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +36,11 @@ final class PokedexViewController: UIViewController {
     }
     
     private func bind() {
-        pokedexViewData?.shouldStartLoading = { [weak self] in
+        pokedexViewModel?.shouldStartLoading = { [weak self] in
             guard let self = self else { return }
             self.tableView.tableFooterView = self.createSpinner()
         }
-        pokedexViewData?.didRecieveNewPokemons = { [weak self] in
+        pokedexViewModel?.didRecieveNewPokemons = { [weak self] in
             guard let self = self else { return }
             self.spinner.stopAnimating()
             self.tableView.tableFooterView = nil
@@ -51,35 +51,28 @@ final class PokedexViewController: UIViewController {
 
 extension PokedexViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let pokedexViewData = pokedexViewData else { return }
-        let pokemonCellViewData = pokedexViewData.pokemons[indexPath.row]
+        guard let pokedexViewData = pokedexViewModel else { return }
+        let pokemonCellViewData = pokedexViewData.pokemonCellViewData(at: indexPath.row)
         let pokemonDetailViewData = PokemonDetailViewData(image: pokemonCellViewData.image, name: pokemonCellViewData.name)
         let detailViewController =  DetailViewController(pokemonDetailViewData: pokemonDetailViewData)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        pokedexViewData?.didScrollTo(row: indexPath.row)
+        pokedexViewModel?.didScrollTo(row: indexPath.row)
     }
 }
 
 extension PokedexViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let pokedexViewData = pokedexViewData else { return 0 }
-        return pokedexViewData.pokemons.count
+        guard let pokedexViewData = pokedexViewModel else { return 0 }
+        return pokedexViewData.pokemonsCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard  let pokedexViewData = pokedexViewData, let cellController = tableView.dequeueReusableCell(withIdentifier: PokemonCellController.identifier, for: indexPath) as? PokemonCellController else { return UITableViewCell() }
-        let pokemon = pokedexViewData.pokemons[indexPath.row]
-        cellController.delegate = self
+        guard  let pokedexViewData = pokedexViewModel, let cellController = tableView.dequeueReusableCell(withIdentifier: PokemonCellController.identifier, for: indexPath) as? PokemonCellController else { return UITableViewCell() }
+        let pokemon = pokedexViewData.pokemonCellViewData(at: indexPath.row)
+        cellController.delegate = pokedexViewData
         return cellController.configured(with: pokemon)
-    }
-}
-
-extension PokedexViewController: FavoriteSelectDelegate {
-    func didPressFavoriteButton(for pokemon: PokemonCellViewData) {
-        self.pokedexViewData?.add(for: pokemon)
-        self.tableView.reloadData()
     }
 }

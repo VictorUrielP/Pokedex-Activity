@@ -10,14 +10,14 @@ import PokedexAPI
 final class PokedexViewModel {
     private let pokedex = PokedexAPI()
     private let favoritePokemonCache: FavoritePokemonCache
-    private(set) lazy var pokemons: [PokemonCellViewData] = Array(pokedex.adaptToPokemonCellViewData(favoritePokemonCache: favoritePokemonCache)[...9]) {
+    private lazy var pokemons: [Pokemon] = Array(pokedex.getPokemons()[...9]) {
         didSet {
             didRecieveNewPokemons?()
         }
     }
     
     private var countPokemon: Int = 0
-    private(set) lazy var allPokemons: [PokemonCellViewData] = Array(pokedex.adaptToPokemonCellViewData(favoritePokemonCache: favoritePokemonCache))
+    private(set) lazy var allPokemons: [Pokemon] = pokedex.getPokemons()
     
     var didRecieveNewPokemons: (() -> Void)?
     var shouldStartLoading: (() -> Void)?
@@ -39,7 +39,7 @@ final class PokedexViewModel {
             countPokemon = countPokemon + 10
             if countPokemon < allPokemons.count {
                 shouldStartLoading?()
-                let newPokemons = Array(pokedex.adaptToPokemonCellViewData(favoritePokemonCache: favoritePokemonCache)[countPokemon...countPokemon + 9])
+                let newPokemons = Array(pokedex.getPokemons()[countPokemon...countPokemon + 9])
                 pokemons.append(contentsOf: newPokemons)
             } else {
                 didRecieveNewPokemons?()
@@ -47,5 +47,20 @@ final class PokedexViewModel {
         } else {
             return
         }
+    }
+    
+    func pokemonCellViewData(at index: Int) -> PokemonCellViewData {
+        pokemons[index].adaptToPokemonCellViewData(favoritePokemonCache: favoritePokemonCache)
+    }
+    
+    func pokemonsCount() -> Int {
+        pokemons.count
+    }
+}
+
+extension PokedexViewModel: FavoriteSelectDelegate {
+    func didPressFavoriteButton(for pokemon: PokemonCellViewData) {
+        self.add(for: pokemon)
+        self.didRecieveNewPokemons?()
     }
 }

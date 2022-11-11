@@ -8,10 +8,10 @@
 import PokedexAPI
 import UIKit
 
-extension PokedexAPI {
+extension Pokemon {
     
-    func adaptToPokemonCellViewData(favoritePokemonCache: FavoritePokemonCache) -> [PokemonCellViewData] {
-        getPokemons().map { map(pokemon: $0, favoritePokemonCache: favoritePokemonCache) }
+    func adaptToPokemonCellViewData(favoritePokemonCache: FavoritePokemonCache) -> PokemonCellViewData {
+        map(pokemon: self, favoritePokemonCache: favoritePokemonCache)
     }
     
     private func map(pokemon: Pokemon, favoritePokemonCache: FavoritePokemonCache) -> PokemonCellViewData {
