@@ -114,13 +114,9 @@
 		D1F4DBA5291AF43A00F9F077 /* PokedexApp */ = {
 			isa = PBXGroup;
 			children = (
-				FD5BDD11291DB6AC00E482F5 /* FavoritesPokemon */,
-				DD322D57291DB2BB005B619C /* Cells */,
 				1B1FA581291DBBF800C5CF72 /* Favorites */,
-				D1F4DBD8291D9FCC00F9F077 /* Detail */,
+				D1F4DBDC291DD83A00F9F077 /* Scenes */,
 				D1F4DBC4291B09A900F9F077 /* Composition */,
-				D1F4DBBF291AFFCC00F9F077 /* Main */,
-				D1F4DBBC291AFBE500F9F077 /* Pokedex */,
 				D1F4DBA6291AF43A00F9F077 /* AppDelegate.swift */,
 				D1F4DBA8291AF43A00F9F077 /* SceneDelegate.swift */,
 				D1F4DBAF291AF43D00F9F077 /* Assets.xcassets */,
@@ -186,6 +182,17 @@
 			path = PokemonCell;
 			sourceTree = "<group>";
 		};
+		D1F4DBDC291DD83A00F9F077 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4DBBF291AFFCC00F9F077 /* Main */,
+				D1F4DBBC291AFBE500F9F077 /* Pokedex */,
+				D1F4DBD8291D9FCC00F9F077 /* Detail */,
+				FD5BDD11291DB6AC00E482F5 /* FavoritesPokemon */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		DD322D57291DB2BB005B619C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +205,7 @@
 		FD5BDD11291DB6AC00E482F5 /* FavoritesPokemon */ = {
 			isa = PBXGroup;
 			children = (
+				DD322D57291DB2BB005B619C /* Cells */,
 				FD5BDD18291DB74B00E482F5 /* Controller */,
 				FD5BDD19291DB75100E482F5 /* View */,
 				FD5BDD1A291DB75700E482F5 /* Model */,
