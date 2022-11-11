@@ -7,14 +7,6 @@
 
 import UIKit
 
-final class FavoritesPokemonViewControllerFactory {
-    func make() -> UIViewController {
-        let pokedexViewController = FavoritesPokemonViewController()
-        let pokedexNavController = UINavigationController(rootViewController: pokedexViewController)
-        return pokedexNavController
-    }
-}
-
 final class MainViewControllerComposer {
     private let favoritePokemonCache = FavoritePokemonCache()
     private let mainViewController = MainViewControllerFactory().make()
