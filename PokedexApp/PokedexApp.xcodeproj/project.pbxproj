@@ -133,11 +133,9 @@
 		D1F4DBBC291AFBE500F9F077 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				D1F4DBDB291DD80900F9F077 /* PokemonCell */,
 				D1F4DBBD291AFC2200F9F077 /* PokedexViewController.swift */,
 				1B1FA584291DC3D900C5CF72 /* PokedexViewModel.swift */,
-				D1F4DBD2291D9E9800F9F077 /* PokemonCellController.swift */,
-				D1F4DBD4291D9EAD00F9F077 /* PokemonCellViewData.swift */,
-				D1F4DBD6291D9EF000F9F077 /* PokemonCellViewDataAdapter.swift */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -176,6 +174,16 @@
 				D1F4DBD9291DA10700F9F077 /* DetailViewController.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		D1F4DBDB291DD80900F9F077 /* PokemonCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4DBD6291D9EF000F9F077 /* PokemonCellViewDataAdapter.swift */,
+				D1F4DBD4291D9EAD00F9F077 /* PokemonCellViewData.swift */,
+				D1F4DBD2291D9E9800F9F077 /* PokemonCellController.swift */,
+			);
+			path = PokemonCell;
 			sourceTree = "<group>";
 		};
 		DD322D57291DB2BB005B619C /* Cells */ = {
