@@ -20,7 +20,7 @@ final class PokemonCellController: UITableViewCell {
         let btnFavorite = UIButton()
         btnFavorite.setImage(UIImage(systemName: "heart"), for: .normal)
         btnFavorite.translatesAutoresizingMaskIntoConstraints = false
-        btnFavorite.addTarget(self, action: #selector(setFavorites(_:)), for: .touchUpInside)
+        btnFavorite.addTarget(PokemonCellController.self, action: #selector(setFavorites(_:)), for: .touchUpInside)
         return btnFavorite
     }()
     
