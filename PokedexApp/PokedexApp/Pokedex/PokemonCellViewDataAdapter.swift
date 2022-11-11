@@ -10,12 +10,15 @@ import UIKit
 
 extension PokedexAPI {
     
-    func adaptToPokemonCellViewData() -> [PokemonCellViewData] {
-        getPokemons().map(map(pokemon:))
+    func adaptToPokemonCellViewData(favoritePokemonCache: FavoritePokemonCache) -> [PokemonCellViewData] {
+        getPokemons().map { map(pokemon: $0, favoritePokemonCache: favoritePokemonCache) }
     }
     
-    private func map(pokemon: Pokemon) -> PokemonCellViewData {
+    private func map(pokemon: Pokemon, favoritePokemonCache: FavoritePokemonCache) -> PokemonCellViewData {
         let image = UIImage(named: pokemon.image, in: Bundle(identifier: "com.victorurielp.PokedexAPI"), with: nil)
-        return PokemonCellViewData(image: image ?? UIImage(), name: pokemon.name)
+        let isFavorite = favoritePokemonCache.searchPokemon(with: pokemon.id)
+        let favoriteImage = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+        return PokemonCellViewData(id: pokemon.id, image: image ?? UIImage(), name: pokemon.name, favoriteImage: favoriteImage ?? UIImage())
     }
 }
+

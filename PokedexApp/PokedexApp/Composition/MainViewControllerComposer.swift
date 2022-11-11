@@ -17,10 +17,9 @@ final class FavoritesPokemonViewControllerFactory {
 
 final class MainViewControllerComposer {
     private let mainViewController = MainViewControllerFactory().make()
-    private let pokedexViewController = PokedexViewControllerFactory().make()
     private let FavoritesViewController = FavoritesPokemonViewControllerFactory().make()
     
-    func mainViewControllerComposed() -> UIViewController {
+    func mainViewControllerComposed(pokedexViewController: UIViewController) -> UIViewController {
         pokedexViewController.tabBarItem.title = "Pokedex"
         pokedexViewController.tabBarItem.image = UIImage(systemName: "house")
         
