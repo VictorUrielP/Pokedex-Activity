@@ -86,12 +86,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B1FA581291DBBF800C5CF72 /* Favorites */ = {
+		1B1FA581291DBBF800C5CF72 /* FavoritesCache */ = {
 			isa = PBXGroup;
 			children = (
 				1B1FA582291DBC1100C5CF72 /* FavoritePokemonCache.swift */,
 			);
-			path = Favorites;
+			path = FavoritesCache;
 			sourceTree = "<group>";
 		};
 		D1F4DB9A291AF43A00F9F077 = {
@@ -114,7 +114,7 @@
 		D1F4DBA5291AF43A00F9F077 /* PokedexApp */ = {
 			isa = PBXGroup;
 			children = (
-				1B1FA581291DBBF800C5CF72 /* Favorites */,
+				1B1FA581291DBBF800C5CF72 /* FavoritesCache */,
 				D1F4DBDC291DD83A00F9F077 /* Scenes */,
 				D1F4DBC4291B09A900F9F077 /* Composition */,
 				D1F4DBA6291AF43A00F9F077 /* AppDelegate.swift */,
