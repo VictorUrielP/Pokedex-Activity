@@ -150,10 +150,8 @@
 		D1F4DBC4291B09A900F9F077 /* Composition */ = {
 			isa = PBXGroup;
 			children = (
+				D1F4DBDF291DD8C400F9F077 /* Factories */,
 				D1F4DBC5291B09CF00F9F077 /* MainViewControllerComposer.swift */,
-				D1F4DBC7291B09E700F9F077 /* MainViewControllerFactory.swift */,
-				D1F4DBC9291B09FE00F9F077 /* PokedexViewControllerFactory.swift */,
-				D1F4DBDD291DD89900F9F077 /* FavoritesPokemonViewControllerFactory.swift */,
 			);
 			path = Composition;
 			sourceTree = "<group>";
@@ -194,6 +192,16 @@
 				FD5BDD11291DB6AC00E482F5 /* FavoritesPokemon */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D1F4DBDF291DD8C400F9F077 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4DBC7291B09E700F9F077 /* MainViewControllerFactory.swift */,
+				D1F4DBC9291B09FE00F9F077 /* PokedexViewControllerFactory.swift */,
+				D1F4DBDD291DD89900F9F077 /* FavoritesPokemonViewControllerFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		DD322D57291DB2BB005B619C /* Cells */ = {
