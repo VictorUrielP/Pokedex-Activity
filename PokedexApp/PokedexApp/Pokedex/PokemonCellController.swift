@@ -24,6 +24,7 @@ final class PokemonCellController: UITableViewCell {
         return btnFavorite
     }()
     
+    @available(iOS 14.0, *)
     func configured(with pokemon: PokemonCellViewData) -> UITableViewCell {
         self.pokemon = pokemon
         var config = defaultContentConfiguration()

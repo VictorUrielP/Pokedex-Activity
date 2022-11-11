@@ -10,12 +10,14 @@ import UIKit
 final class PokedexViewController: UIViewController {
     
     private lazy var tableView = UITableView(frame: view.bounds, style: .plain)
+    private lazy var spinner = UIActivityIndicatorView()
     
-    var pokedexViewData: PokedexViewData?
+    var pokedexViewData: PokedexViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        bind()
     }
     
     private func configureTableView() {
@@ -24,7 +26,27 @@ final class PokedexViewController: UIViewController {
         tableView.delegate = self
         tableView.register(PokemonCellController.self, forCellReuseIdentifier: PokemonCellController.identifier)
     }
-        
+
+    private func createSpinner() -> UIView {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
+        spinner.center = footerView.center
+        footerView.addSubview(spinner)
+        spinner.startAnimating()
+        return footerView
+    }
+    
+    private func bind() {
+        pokedexViewData?.shouldStartLoading = { [weak self] in
+            guard let self = self else { return }
+            self.tableView.tableFooterView = self.createSpinner()
+        }
+        pokedexViewData?.didRecieveNewPokemons = { [weak self] in
+            guard let self = self else { return }
+            self.spinner.stopAnimating()
+            self.tableView.tableFooterView = nil
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension PokedexViewController: UITableViewDelegate {
@@ -35,6 +57,10 @@ extension PokedexViewController: UITableViewDelegate {
         let detailViewController =  DetailViewController(pokemonDetailViewData: pokemonDetailViewData)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        pokedexViewData?.didScrollTo(row: indexPath.row)
+    }
 }
 
 extension PokedexViewController: UITableViewDataSource {
@@ -44,9 +70,9 @@ extension PokedexViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let pokedexViewData = pokedexViewData, let cellController = tableView.dequeueReusableCell(withIdentifier: PokemonCellController.identifier, for: indexPath) as? PokemonCellController else { return UITableViewCell() }
-        cellController.delegate = self
+        guard  let pokedexViewData = pokedexViewData, let cellController = tableView.dequeueReusableCell(withIdentifier: PokemonCellController.identifier, for: indexPath) as? PokemonCellController else { return UITableViewCell() }
         let pokemon = pokedexViewData.pokemons[indexPath.row]
+        cellController.delegate = self
         return cellController.configured(with: pokemon)
     }
 }

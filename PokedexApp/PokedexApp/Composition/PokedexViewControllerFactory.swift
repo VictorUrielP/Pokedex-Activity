@@ -10,7 +10,7 @@ import UIKit
 final class PokedexViewControllerFactory {
     func make(favoritesPokemonCache: FavoritePokemonCache) -> UIViewController {
         let pokedexViewController = PokedexViewController()
-        let pokedexViewData = PokedexViewData(favoritePokemonCache: favoritesPokemonCache)
+        let pokedexViewData = PokedexViewModel(favoritePokemonCache: favoritesPokemonCache)
         pokedexViewController.pokedexViewData = pokedexViewData
         let pokedexNavController = UINavigationController(rootViewController: pokedexViewController)
         return pokedexNavController
